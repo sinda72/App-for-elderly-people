@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#17CEC9"
+        app:srcCompat="@drawable/main_top3" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        //메인멍뭉이
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="#F9FBC9"
+
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/myPuppy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleY="0.7"
+                android:scaleX="0.7"
+                android:background="#F9FBC9"
+                app:srcCompat="@drawable/main1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            //산책하기버튼
+            <ImageButton
+                android:id="@+id/sanchaekBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginRight="2.5dp"
+
+                android:background="#00ff0000"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mnbtn1" />
+            //날씨버튼
+            <ImageButton
+                android:id="@+id/nalsiBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="0.4"
+                android:scaleType="fitXY"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/mnbtn2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            //약알림버튼
+            <ImageButton
+                android:id="@+id/yalarmBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2.5dp"
+
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:background="#00ff0000"
+                app:srcCompat="@drawable/mnbtn3" />
+
+            //건강하기버튼
+            <ImageButton
+                android:id="@+id/kunkangBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.5dp"
+
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:background="#00ff0000"
+                app:srcCompat="@drawable/mnbtn4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
